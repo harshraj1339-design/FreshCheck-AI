@@ -1,0 +1,14 @@
+{
+  "name": "freshcheck-ai",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -k \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "lint": "npm --prefix client run lint && npm --prefix server run lint",
+    "test": "npm --prefix server run test",
+    "install:all": "npm --prefix client install && npm --prefix server install",
+    "postinstall": "npm run install:all"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}

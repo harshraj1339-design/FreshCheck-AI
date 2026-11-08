@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.local
+coverage
+*.log
+server/.bifrost-data/
+.env.*
+!.env.example
+build/
+.DS_Store
+Thumbs.db
