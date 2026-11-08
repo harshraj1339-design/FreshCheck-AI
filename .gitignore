@@ -10,3 +10,4 @@ server/.bifrost-data/
 build/
 .DS_Store
 Thumbs.db
+*.tsbuildinfo
